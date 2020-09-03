@@ -2,7 +2,7 @@ $(document ).ready(function (){
 var id= prompt("enter your favorite youtuber channel id", "UCq-Fj5jknLsUf-MWSy4_brA")
 $("button").click(function (){
 setInterval(function() {
-$.getJSON("https://cors-munnyreol.herokuapp.com/https://freewebtools.com/compteur-youtube/?channelId="+id, function (subss) {
+$.getJSON("https://cors-anywhere.herokuapp.com/https://freewebtools.com/compteur-youtube/?channelId="+id, function (subss) {
 
         sub = subss.subscriberCount;
         view=subss.viewCount;
